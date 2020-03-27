@@ -3,8 +3,8 @@
  * @return {number}
  */
 var lengthOfLastWord = function(s) {
-    let arrOfWords = s.split(" ");
-    let lastword = arrOfWords[arrOfWords - 1];
-    
-    return lastword.length();
+    let arrOfWords = s.trim().split(" ");
+    let lastword = arrOfWords.pop();
+        
+    return lastword.length;
 };
